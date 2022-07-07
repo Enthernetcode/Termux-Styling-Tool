@@ -2,4 +2,5 @@
 personalise ur termux Terminal to your
 Taste... 
 
-https://github.com/Enthernetcode/Termux-Styling-Tool/blob/main/cooltext414804534336727.gif
+
+EnthernetCode.github.com/Termux-Styling-Tool/cooltext414804534336727.gif
