@@ -1,0 +1,72 @@
+#!/bin/bash
+
+#################################
+#          C O L O U R S        #
+#################################
+orange='\033[0;33m'             #
+white="\033[1;37m"              #
+grey="\033[0;37m"               #
+purple="\033[1;35m"             #
+red="\033[1;31m"                #
+green="\033[1;32m"              #
+yellow="\033[1;33m"             #
+purple="\033[0;35m"             #
+cyan="\033[0;36m"               #
+cyan1="\033[1;36m"              #
+sta="\e[5m"                     #
+cafe="\033[0;33m"               #
+fiuscha="\033[0;35m"            #
+sto="\e[25m"                    #
+blue="\033[1;34m"               #
+l_red="\033[1;37;41m"           #
+nc="\033[0m"                    #
+pink="\e[95m"                   #
+#################################
+
+clear
+        printf "${purple}
+
+
+'########:'##::: ##:'########:'##::::'##:'########:'########::'##::: ##:'########:'########:>
+ ##.....:: ###:: ##:... ##..:: ##:::: ##: ##.....:: ##.... ##: ###:: ##: ##.....::....||..:::
+ ##::::::: ####: ##:::: ##:::: ##:::: ##: ##::::::: ##:::: ##: ####: ##: ##::::::::...||::::
+ ######::: ## ## ##:::: ##:::: #########: ######::: ########:: ## ## ##: ######:::::::||::.
+ ##...:::: ##. ####:::: ##:::: ##.... ##: ##...:::: ##.. ##::: ##. ####: ##...:::::...||.::
+ ##::::::: ##:. ###:::: ##:::: ##:::: ##: ##::::::: ##::. ##:: ##:. ###: ##::::::::...||...
+ ########: ##::. ##:::: ##:::: ##:::: ##: ########: ##:::. ##: ##::. ##: ########:::: ||.::
+........::..::::..:::::..:::::..:::::..::........::..:::::..::..::::..::........:::::.||;:.
+\n                                            ${green}v1.0${sta}\n\n"
+
+printf " ${cyan} welcom to  Termux Styling tool  created by ${fiuscha}Enthernet${red}Code\n\n"
+
+# banner
+declare -i 1=red
+declare -i 2=blue
+declare -i 3=cyan
+declare -i 4=pink
+declare -i 5=purple
+declare -i 6=green
+declare -i 7=cyan1
+declare -i 8=yellow
+
+
+
+        printf "\e[0m\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m01\e[0m\e[1;91m]\e[0m\e[1;32m red        \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m02\e[0m\e[1;91m]\e[0m\e[1;32m blue       \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m03\e[0m\e[1;91m]\e[0m\e[1;32m cyan       \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m04\e[0m\e[1;91m]\e[0m\e[1;32m pink       \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m05\e[0m\e[1;91m]\e[0m\e[1;32m purple     \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m06\e[0m\e[1;91m]\e[0m\e[1;32m green      \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m07\e[0m\e[1;91m]\e[0m\e[1;32m cyan1      \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m08\e[0m\e[1;91m]\e[0m\e[1;32m yellow     \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m09\e[0m\e[1;91m]\e[0m\e[1;32m sta        \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m10\e[0m\e[1;91m]\e[0m\e[1;32m cafe       \e[0m\n\n"
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m00\e[0m\e[1;91m]\e[0m\e[1;32m <-sto      \e[0m\n\n"
+        read -p $'\e[0;32mTermux-Styling-tool :-> \e[0m' color
+echo 'enter name for userinterface'
+	read name
+        
+PS1='\033[01;34m\]✓\[$color]$name\[\033[01;34m\]_\[\033[00;34m\]\[\0>
+
+eval $PS1
