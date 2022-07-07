@@ -1,2 +1,3 @@
 # Termux-Styling-Tool
-personalise ur termux file
+personalise ur termux Terminal to your
+Taste... 
