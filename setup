@@ -7,13 +7,13 @@ cd ..
 
 cd usr/etc
 
-apt install toilet
+#apt install toilet
 
-apt install figlet
+#apt install figlet
 
-pkg install toilet
+#pkg install toilet
 
-pkg install figlet
+#pkg install figlet
 
 echo "in the text editor about to apear scroll below and paste the copied\n item after filling the form below"
 
