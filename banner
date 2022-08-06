@@ -1,0 +1,7 @@
+#!/bin/bash
+
+color = '\033[01;31m\]'
+name = 'cool'
+color2 = '\033[01;34m\]_\[\033[00;34m\]\[---'
+
+PS1='$color+$name+$color2'

@@ -23,6 +23,23 @@ nc="\033[0m"                    #
 pink="\e[95m"                   #
 #################################
 
+#################################
+#          B A N N E R          #
+#################################
+01 = '1;31m'                    #
+02 = '1;34m'                    #
+03 = '0;36m'                    #
+04 = '\e[95m'                   #
+05 = '1;35m'                    #
+06 = '0;37m'                    #
+07 = '1;36m'                    #
+08 = '1;33m'                    #
+09 = '\e[5m'                    #
+10 = '0;33m'                    #
+11 = '\e[25m'                   #
+12 = '1;37;41m'                 #
+#################################
+
 clear
         printf "${purple}
 
@@ -39,17 +56,6 @@ clear
 
 printf " ${cyan} welcom to  Termux Styling tool  created by ${fiuscha}Enthernet${red}Code\n\n"
 
-# banner
-declare -i 1=red
-declare -i 2=blue
-declare -i 3=cyan
-declare -i 4=pink
-declare -i 5=purple
-declare -i 6=green
-declare -i 7=cyan1
-declare -i 8=yellow
-
-
 
         printf "\e[0m\n"
         printf " \e[0m\e[1;91m[\e[0m\e[1;97m01\e[0m\e[1;91m]\e[0m\e[1;32m red        \e[0m\n\n"
@@ -62,11 +68,68 @@ declare -i 8=yellow
         printf " \e[0m\e[1;91m[\e[0m\e[1;97m08\e[0m\e[1;91m]\e[0m\e[1;32m yellow     \e[0m\n\n"
         printf " \e[0m\e[1;91m[\e[0m\e[1;97m09\e[0m\e[1;91m]\e[0m\e[1;32m sta        \e[0m\n\n"
         printf " \e[0m\e[1;91m[\e[0m\e[1;97m10\e[0m\e[1;91m]\e[0m\e[1;32m cafe       \e[0m\n\n"
-        printf " \e[0m\e[1;91m[\e[0m\e[1;97m00\e[0m\e[1;91m]\e[0m\e[1;32m <-sto      \e[0m\n\n"
-        read -p $'\e[0;32mTermux-Styling-tool :-> \e[0m' color
-echo 'enter name for userinterface'
+        printf " \e[0m\e[1;91m[\e[0m\e[1;97m11\e[0m\e[1;91m]\e[0m\e[1;32m <-sto      \e[0m\n\n"
+	printf " \e[0m\e[1;91m[\e[0m\e[1;97m12\e[0m\e[1;91m]\e[0m\e[1;32m l_red      \e[0m\n\n"
+#        op=int(input("color: "))
+	read -p $'\e[0;32mTermux-Styling-tool :-> \e[0m' opt
+#	01 = 1;31m
+#	02 = 1;34m
+#	03 = 0;36m
+#	04 = \e[95m
+#	05 = 1;35m
+#	06 = 0;37m
+#	07 = 1;36m
+#	08 = 1;33m
+#	09 = \e[5m
+#	10 = 0;33m
+#	11 = \e[25m
+#	12 = 1;37;41m
+	echo 'enter name for userinterface'
 	read name
-        
-PS1='\033[01;34m\]✓\[$color]$name\[\033[01;34m\]_\[\033[00;34m\]\[\0>
+	echo $opt
+	echo $name
+        if [[ $opt == 1 || $opt == 01 ]]; then
+		 PS1='\033[01;31m\]'$name'\033[01;34m\]_\[\033[00;34m\]\[---'
+	elif [[ $opt == 2 || $opt == 02 ]]; then
+                 PS1='\033[01;34m\]{$name}\[\033[01;34m\]\[\033[00;31m\]\[--\n'
+	elif [[ $opt == 3 || $opt == 03 ]]; then
+                 PS1='\033[01;34m\]✓\[0;36m\]$name\[\033[01;34m\]\[\033[00;32m\]\[--\n'
+	elif [[ $opt == 4 || $opt == 04 ]]; then
+                 PS1='\033[01;34m\]✓\[\e[95m\]$name\[\033[01;34m\]\[\033[00;33m\]\[--\n'
+	elif [[ $opt == 5 || $opt == 05 ]]; then
+                 PS1='\033[01;34m\]✓\[1;35m\]$name\[\033[01;34m\]\[\033[00;35m\]\[--\n'
+	elif [[ $opt == 6 || $opt == 06 ]]; then
+                 PS1='\033[01;34m\]✓\[0;37m\]$name\[\033[01;34m\]\[\033[00;36m\]\[--\n'
+	elif [[ $opt == 7 || $opt == 07 ]]; then
+                 PS1='\033[01;34m\]✓\[1;36m\]$name\[\033[01;34m\]\[\033[00;37m\]\[--\n'
+	elif [[ $opt == 8 || $opt == 08 ]]; then
+                 PS1='\033[01;34m\]✓\[1;33m\]$name\[\033[01;34m\]\[\033[00;38m\]\[--\n'
+	elif [[ $opt == 9 || $opt == 09 ]]; then
+                 PS1='\033[01;34m\]✓\[\e[5m\]$name\[\033[01;34m\]\[\033[00;39m\]\[--\n'
+	elif [[ $opt == 10 || $opt == 10 ]]; then
+                 PS1='\033[01;34m\]✓\[0;33m\]$name\[\033[01;34m\]\[\033[00;30m\]\[--\n'
+	elif [[ $opt == 0 || $opt == 11 ]]; then
+                 PS1='\033[01;34m\]✓\[\e[25m\]$name\[\033[01;34m\]\[\033[00;31m\]\[--\n'
+	elif [[ $opt == 1 || $opt == 12 ]]; then
+                 PS1='\033[01;34m\]✓\[1;37;41m\]$name\[\033[01;34m\]\[\033[00;33m\]\[--\n'
+#	else:
+#		print ('cant u read u dummy')	
+	fi
+#\]✓\[$opt]$name\[\]_\[\]\[>
 
-eval $PS1
+
+#01 = '1;31m'
+#02 = '1;34m'
+#03 = '0;36m'
+#04 = '\e[95m'
+#05 = '1;35m'
+#06 = '0;37m'
+#07 = '1;36m'
+#08 = '1;33m'
+#09 = '\e[5m'
+#10 = '0;33m'
+#11 = '\e[25m'
+#12 = '1;37;41m'
+
+
+#PS1='\033[01;34m\]James\[\033[01;34m\]\[\033[00;34m\]\[--\n'
