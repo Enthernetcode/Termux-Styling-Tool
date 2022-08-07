@@ -11,4 +11,4 @@ Taste...
 ![image]
 (EnthernetCode.github.com/Termux-Styling-Tool/cooltext414804534336727.gif)
 
-![image]EnthernetCode.github.com/Termux-Styling-Tool/cooltext414804534336727.gif)
+![image](EnthernetCode.github.com/Termux-Styling-Tool/cooltext414804534336727.gif)
