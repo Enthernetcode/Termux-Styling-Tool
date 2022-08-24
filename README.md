@@ -5,4 +5,4 @@ Taste...
 
 
 <img
-src"cooltext414804534336727.gif"
+src="cooltext414804534336727.gif"
